@@ -1,6 +1,6 @@
 # lupin-do!
 
-`lupin-do!` is a tiny (like 40 loc) frontend library for building web applications. It's inspired by [re-frame](https://day8.github.io/re-frame/re-frame/), but is smaller and does not have a React dependency. Rather, it wraps the very cool [relicant](https://github.com/cjohansen/replicant) library, manages state with a reactive atom, and provides mechanisms for updating state.
+`lupin-do!` is a tiny (like 40 loc) frontend library for building web applications. It's inspired by [re-frame](https://day8.github.io/re-frame/re-frame/), but is smaller and does not have a React dependency. Rather, it wraps the very cool [replicant](https://github.com/cjohansen/replicant) library, manages state with a reactive atom, and provides mechanisms for updating state.
 
 ### what's with the name?
 
@@ -22,3 +22,8 @@ And that's it. Once those functions are defined, you mount your application (in 
 ### An example
 
 See `./example` for a simple app that demonstrates basic use of `lupin-do`, including asynchronous event generation as the result of an AJAX request.
+
+
+### WIP
+
+This is a work in progress. I'm not entirely happy with how async events are handled, and I have no idea how this scales beyond the small projects I've used it on, either from an efficiency or complexity standpoint.
