@@ -11,11 +11,6 @@
      (render state))))
 
 (defn make-dispatcher [state dispatch]
-  ;; why the weird definition of `dispatch-fn`?
-  ;; i believe this is kind-of the Y-combinator: we're passing
-  ;; a function to itself, to call recursively (in our case, in things like
-  ;; ajax handers, which are called from the dispatcher but themselves will need
-  ;; to dispatch)
   (fn [replicant-data handler-data]
     (letfn [(disp-fn [ev-data h-data recur-fn]
               (let [[new-state new-events] (dispatch @state ev-data h-data recur-fn)]
