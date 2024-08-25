@@ -31,6 +31,6 @@ Your `dispatch` function is expected to return a tuple of:
 * an updated application state, as a Clojure map
 * any events to be re-dispatched after the application state is updated
 
-The example app doesn't demonstrate any use of the latter. In most cases, this will be `nil`.
+The example app doesn't demonstrate any use of the latter. In most cases, this will be `nil`, but is useful when you want to update state and then want to trigger an async action (like an AJAX request) that needs to use the updated state. Add the event to the result tuple, then `dispatch` will be called again with that event and your updated state.
 
-If the state map is updated, your `render` function is called with the new value, and the resulting hiccup is displayed to the user: the Replicant library makes that DOM update efficient.
+If the state map is updated, your `render` function is called with the new value, and the resulting hiccup is displayed to the user. Replicant makes that DOM update efficient.
