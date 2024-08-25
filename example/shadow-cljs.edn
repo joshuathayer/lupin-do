@@ -1,0 +1,10 @@
+;; shadow-cljs configuration
+{:deps true
+ :js-options {:js-package-dirs ["node_modules"]}
+  :builds {
+    :example-app {:target :browser
+                  :output-dir "resources"
+                  :asset-path "/scripts"
+                  :modules {:example {:init-fn example/init}}}}
+ :nrepl {:port 20000
+         :middleware []}}

@@ -1,0 +1,2 @@
+example-app:
+  npx shadow-cljs -d cider/cider-nrepl:0.47.1 watch example-app
