@@ -1,8 +1,5 @@
 (ns lupin-do.core
-  (:require [replicant.dom :as d]
-            [cljs.pprint :refer [pprint]]))
-
-;; ok very simple data-driven UI loop
+  (:require [replicant.dom :as d]))
 
 (defn make-renderer [el render]
   (fn [state]
