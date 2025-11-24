@@ -1,2 +1,2 @@
 {:paths ["src/dev" "src/main" "src/test"]
- :deps {no.cjohansen/replicant {:mvn/version "0.2024.05.10"}}}
+ :deps {no.cjohansen/replicant {:mvn/version "2025.06.21"}}}
